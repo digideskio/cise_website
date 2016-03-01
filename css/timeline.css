@@ -1,0 +1,229 @@
+/** timeline box structure **/
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: rgb(3, 169, 244);
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.tldate {
+  display: block;
+  width: 100px;
+  background: rgb(0, 150, 136);
+  color: #ededed;
+  margin: 0 auto;
+  padding: 3px 0;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-shadow: 0 0 11px rgba(0,0,0,0.35);
+}
+
+.timeline li {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.timeline li:before, .timeline li:after {
+  content: " ";
+  display: table;
+}
+.timeline li:after {
+  clear: both;
+}
+.timeline li:before, .timeline li:after {
+  content: " ";
+  display: table;
+}
+/**
+/** timeline panels **/
+.timeline li .panel {
+  width: 46%;
+  float: left;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  border-radius:3px;
+}
+
+/** panel arrows **/
+.timeline li .panel:before {
+  position: absolute;
+  top: 28px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.timeline li .panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline li .panel.noarrow:before, .timeline li .panel.noarrow:after {
+  top:0;
+  right:0;
+  display: none;
+  border: 0;
+}
+
+.timeline li.timeline-inverted .panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+/** timeline circle icons **/
+.timeline li .tl-circ {
+  position: absolute;
+  top: 26px;
+  left: 50.3%;
+  text-align: center;
+  background: #6a8db3;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  line-height: 35px;
+  margin-left: -16px;
+  border: 3px solid #90acc7;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+
+/** timeline content **/
+
+.panel-heading h4 {
+  margin: 0;
+  color: #c25b4e;
+}
+
+.panel-body p, .panel-body ul {
+  margin-bottom: 0;
+}
+
+.panel-body {
+    background: url("/images/quotes_bg.png") 10px 20px no-repeat ;
+    line-height: 24px;
+    padding: 50px 12px 9px 34px;
+}
+.panel-body > p + p {
+  margin-top: 5px;
+}
+
+/** media queries **/
+@media (max-width: 991px) {
+  .timeline li .panel {
+    width: 44%;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-header h1 { font-size: 1.8em; }
+  
+  ul.timeline:before {
+    left: 40px;
+  }
+  
+  .tldate { width: 140px; }
+
+  ul.timeline li .panel {
+    width: calc(100% - 90px);
+    width: -moz-calc(100% - 90px);
+    width: -webkit-calc(100% - 90px);
+  }
+
+  ul.timeline li .tl-circ {
+    top: 22px;
+    left: 22px;
+    margin-left: 0;
+
+  }
+  ul.timeline > li > .tldate {
+    margin: 0;
+  }
+
+  ul.timeline > li > .panel {
+    float: right;
+  }
+
+  ul.timeline > li > .panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  ul.timeline > li > .panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+}
+
+/* Panel footer */
+.panel > .panel-footer,
+.panel.panel-default > .panel-footer {
+  background-color: #eeeeee;
+}
+.panel.panel-inverse > .panel-footer {
+  background-color: #3f51b5;
+}
+.panel.panel-primary > .panel-footer {
+  background-color: #009688;
+}
+.panel.panel-success > .panel-footer {
+  background-color: #4caf50;
+}
+.panel.panel-info > .panel-footer {
+  background-color: #03a9f4;
+}
+.panel.panel-warning > .panel-footer {
+  background-color: #ff5722;
+}
+.panel.panel-danger > .panel-footer {
+  background-color: #f44336;
+}
+[class*="panel-"] > .panel-footer {
+  color: rgba(255,255,255, 0.84);
+  border: 0;
+}
+.panel-default > .panel-footer,
+.panel:not([class*="panel-"]) > .panel-footer {
+  color: rgba(0,0,0, 0.87);
+}

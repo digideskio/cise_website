@@ -1,0 +1,142 @@
+/* Body */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    }
+
+/* cise */
+#c {
+    font-size:130%;
+    }
+#ise {
+    font-size:70%;
+    }
+    
+/* Main image */
+#main {
+    background-image:url("/images/main.jpg");
+    background-position:right;
+    padding-bottom:0px;
+    margin-bottom:0px;
+    }
+    
+/* Fixed navbar */
+#navbar-top {
+    margin-bottom:0px;
+    background-color:#333;
+    z-index:10;
+    }
+    
+/* Navbar buttons */
+#nav-buttons {
+    margin: auto;
+    width: auto;
+    text-align:center;
+    background-color:#111;
+    /* For internet explorer */
+    filter:alpha(opacity=60);
+    /* CSS3 standard */
+    opacity:0.6;
+    }
+
+#nav-buttons a {
+    filter:alpha(opacity=80);
+    /* CSS3 standard */
+    opacity:0.8;
+    color:#fff;
+    background-color:#333;
+    font-color:#fff;
+    }        
+/* spotlights */
+#myCarousel {
+    border:2px solid;
+    box-shadow: 10px 10px 5px #888888;
+    overflow:hidden;
+    }
+  
+#myCarousel .carousel-caption {
+    background-color:transparent;
+    }
+
+#myCarousel .carousel-caption:hover {
+    /* CSS3 standard */
+    color:#000;
+    background-color:#ddd;
+    /* For internet explorer */
+    filter:alpha(opacity=80);
+    /* CSS3 standard */
+    opacity:0.8;
+    }
+        
+.main-title {
+    display:inline-block;
+    vertical-align:middle !important;
+    }
+
+/* NCR Exam */
+
+#ncre-main {
+    background-image:url("/images/4.4.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:bottom;
+    overflow:hidden;
+    }
+    
+#ncre-main .jumbotron {
+    background-color:#c1cce2;
+    width:100%;
+    /* For internet explorer */
+    filter:alpha(opacity=80);
+    /* CSS3 standard */
+    opacity:0.8;
+    }
+
+#ncre-main .row {
+    width:100%;
+    /* For internet explorer */
+    filter:alpha(opacity=1);
+    /* CSS3 standard */
+    opacity:1;
+    }
+    
+/* footer */    
+footer#main-footer {
+    background-color:#333;
+    text-align:center;
+    }
+
+#main-footer p {
+    margin-bottom:5px;
+    }
+
+
+/* media query */
+#main-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .main-container {
+    width: 600px;
+  }
+}
+@media (min-width: 992px) {
+  .main-container {
+    width: 725px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-container {
+    width: 900px;
+  }
+@media (min-width: 1600px) {
+  .main-container {
+    width: 1200px;
+  }
+}
+
