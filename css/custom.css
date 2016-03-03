@@ -4,6 +4,7 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
+    background-color:#fff;
     }
 
 /* cise */
@@ -51,6 +52,10 @@ body {
     font-color:#fff;
     }        
 /* spotlights */
+#spotlights {
+    background-color:#fff;
+    }
+
 #myCarousel {
     border:2px solid;
     box-shadow: 10px 10px 5px #888888;
@@ -80,11 +85,13 @@ body {
 #ncre-main {
     padding-left:0px;
     padding-right:0px;
-    background-color:#c1cce2;
+    padding-top:40px;
+    background-color:rgba(193, 204, 226, 0.7);
     }
     
 #ncre-main .row {
     width:100%;
+    padding:20px;
     /* For internet explorer */
     filter:alpha(opacity=1);
     /* CSS3 standard */
@@ -103,7 +110,6 @@ body {
     background-repeat:no-repeat;
     background-size:cover;
     background-position:bottom;
-    padding-top:40px;
     }
 
 #main-footer p {
@@ -111,12 +117,20 @@ body {
     }
 
 /* links footer */
+#foot-footer {
+    width:100%;
+    background-color:rgba(0, 115, 170, 0.9);
+    }
 
 #links {
     padding-top:15px;
     padding-bottom:15px;
+    color:#fff;
     }
 
+#links a {
+    color:#ccc;
+    }
 /* media query */
 .main-container {
   padding-right: 15px;

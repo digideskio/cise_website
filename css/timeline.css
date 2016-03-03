@@ -16,16 +16,17 @@
   margin-left: -1.5px;
 }
 
+.timeline .clear {
+    clear:both;
+    }
 .tldate {
   display: block;
   width: 100px;
-  background: rgb(0, 150, 136);
   color: #ededed;
   margin: 0 auto;
-  padding: 3px 0;
+  padding:0px; 
   font-weight: bold;
   text-align: center;
-  -webkit-box-shadow: 0 0 11px rgba(0,0,0,0.35);
 }
 
 .timeline li {
@@ -36,15 +37,19 @@
 .timeline li:before, .timeline li:after {
   content: " ";
   display: table;
-}
+}*
 .timeline li:after {
-  clear: both;
+  clear: right;
+  content:" ";
+}
+.timeline li.timeline-inverted:after {
+  clear: left;
+  content:" ";
 }
 .timeline li:before, .timeline li:after {
   content: " ";
   display: table;
 }
-/**
 /** timeline panels **/
 .timeline li .panel {
   width: 46%;
@@ -59,12 +64,13 @@
 /** panel arrows **/
 .timeline li .panel:before {
   position: absolute;
+  color:#eee;
   top: 28px;
   right: -15px;
   display: inline-block;
   border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
+  border-left: 15px solid #eee;
+  border-right: 0 solid #eee;
   border-bottom: 15px solid transparent;
   content: " ";
 }
@@ -75,8 +81,8 @@
   right: -14px;
   display: inline-block;
   border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
+  border-left: 14px solid #eee;
+  border-right: 0 solid #eee;
   border-bottom: 14px solid transparent;
   content: " ";
 }
@@ -90,7 +96,7 @@
 .timeline li.timeline-inverted .panel {
   float: right;
 }
-
+  
 .timeline li.timeline-inverted .panel:before {
   border-left-width: 0;
   border-right-width: 15px;
@@ -124,7 +130,6 @@
   border-bottom-left-radius: 50%;
 }
 
-
 /** timeline content **/
 
 .panel-heading h4 {
@@ -138,6 +143,7 @@
 
 .panel-body {
     background: url("/images/quotes_bg.png") 10px 20px no-repeat ;
+    background-color:#eee;
     line-height: 24px;
     padding: 50px 12px 9px 34px;
 }
