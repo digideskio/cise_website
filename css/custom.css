@@ -8,10 +8,11 @@ body {
 
 /* cise */
 #c {
-    font-size:130%;
+    font-size:160%;
+	font-weight:bold;
     }
 #ise {
-    font-size:70%;
+    font-size:60%;
     }
     
 /* Main image */
@@ -26,7 +27,7 @@ body {
 #navbar-top {
     margin-bottom:0px;
     background-color:#333;
-    z-index:10;
+    z-index:100;
     }
     
 /* Navbar buttons */
@@ -56,8 +57,7 @@ body {
     overflow:hidden;
     }
   
-#myC
-arousel .carousel-caption {
+#myCarousel .carousel-caption {
     background-color:transparent;
     }
 
@@ -77,16 +77,12 @@ arousel .carousel-caption {
     }
 
 /* NCR Exam */
-    
-#ncre-main .jumbotron {
+#ncre-main {
+    padding-left:0px;
+    padding-right:0px;
     background-color:#c1cce2;
-    width:100%;
-    /* For internet explorer */
-    filter:alpha(opacity=80);
-    /* CSS3 standard */
-    opacity:0.8;
     }
-
+    
 #ncre-main .row {
     width:100%;
     /* For internet explorer */
@@ -98,14 +94,16 @@ arousel .carousel-caption {
 .ncre-item {
     margin-bottom:0px !important;
     padding:5px !important;
+	border-radius:0px !important;
     }
 /* footer */    
 
 #main-footer {
-    background-image:url("/images/4.4.g");
+    background-image:url("/images/4.4.jpg");
     background-repeat:no-repeat;
     background-size:cover;
     background-position:bottom;
+    padding-top:40px;
     }
 
 #main-footer p {
