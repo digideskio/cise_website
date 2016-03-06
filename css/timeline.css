@@ -65,6 +65,32 @@
   text-decoration: none;
   color:inherit;
 }
+/* footer */
+.timeline li .panel-footer {
+    display:table;
+    width:100%
+    }
+
+.timeline li .panel-footer .footer-row {
+    display:table-row;
+    }
+
+.timeline li .panel-footer .title {
+    display: table-cell;
+    width:75%;
+    vertical-align: middle;
+}
+.timeline li .panel-footer .time  {
+    display: table-cell;
+    width:25%;
+    vertical-align: middle;
+}
+.timeline li .panel-footer .time span {
+    display: block;
+}
+.timeline li .panel-footer .time .date {
+    font-size:130%;
+}
 .timeline li .panel-footer a {
  color:#fff;
 }
