@@ -6,7 +6,7 @@
 }
 
 .timeline:before {
-  top: 0;
+  top: -10px;
   bottom: 0;
   position: absolute;
   content: " ";
@@ -24,7 +24,7 @@
   width: 100px;
   color: #ededed;
   margin: 0 auto;
-  padding:0px; 
+  padding:0px;
   font-weight: bold;
   text-align: center;
 }
@@ -61,6 +61,13 @@
   border-radius:3px;
 }
 
+.timeline li .panel a:hover,a:focus {
+  text-decoration: none;
+  color:inherit;
+}
+.timeline li .panel-footer a {
+ color:#fff;
+}
 /** panel arrows **/
 .timeline li .panel:before {
   position: absolute;
@@ -96,7 +103,14 @@
 .timeline li.timeline-inverted .panel {
   float: right;
 }
-  
+.timeline li .alert {
+  margin-bottom:0px;
+}
+.timeline li .panel-title {
+  font-weight: bold;
+  font-size: 110%；
+}
+
 .timeline li.timeline-inverted .panel:before {
   border-left-width: 0;
   border-right-width: 15px;
@@ -160,11 +174,11 @@
 
 @media (max-width: 700px) {
   .page-header h1 { font-size: 1.8em; }
-  
+
   ul.timeline:before {
     left: 40px;
   }
-  
+
   .tldate { width: 140px; }
 
   ul.timeline li .panel {
