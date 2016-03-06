@@ -75,6 +75,18 @@ body {
     background-color:#111;
     font-color:#fff;
     }
+
+/* social links */
+#social {
+    position: fixed;
+    top:60px;
+    right:0px;
+    z-index: 1000;
+}
+#social img {
+    display: block;
+    width: 40px;
+}
 /* spotlights */
 #spotlights {
     background-color:#fff;
@@ -151,11 +163,12 @@ body {
 }
 /* NCR Exam */
 #ncre-main {
+    margin-top:40px;
     padding-left:0px;
     padding-right:0px;
-    padding-top:20px;
-    padding-bottom: 20px;
-    background-color:rgba(212, 219, 235, 0.85);
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color:rgba(212, 219, 235, 0.5);
     font-size: 110%;
     }
 
@@ -187,7 +200,6 @@ footer hr {
     background-image:url("/images/4.4.jpg");
     background-repeat:no-repeat;
     background-size:cover;
-    background-position:bottom;
     }
 
 #main-footer p {
