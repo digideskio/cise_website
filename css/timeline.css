@@ -137,6 +137,9 @@
   font-weight: bold;
   font-size: 110%；
 }
+.timeline li .panel-custom .panel-footer {
+    background-color:rgb(148,191,83);
+}
 
 .timeline li.timeline-inverted .panel:before {
   border-left-width: 0;
