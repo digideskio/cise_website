@@ -448,4 +448,7 @@ footer hr {
   .container {
       width:1400px;
   }
+  .timeline li .tl-circ {
+  left: 49.6%;
+}
 }
