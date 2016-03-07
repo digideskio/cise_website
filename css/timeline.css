@@ -7,7 +7,7 @@
 
 .timeline:before {
   top: 50px;
-  bottom: 70px;
+  bottom: 100px;
   position: absolute;
   content: " ";
   width: 3px;

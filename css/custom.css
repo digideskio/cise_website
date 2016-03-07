@@ -127,6 +127,7 @@ h1,h2,h3,h4 {
     width: auto !important;
     font-size: 60%;
     padding: 0px 5px 0px 5px;
+    color:#fff;
 }
 .first:first-letter {
     font-size: 200%;
@@ -200,16 +201,23 @@ h1,h2,h3,h4 {
     background-color: #fff;
     width: 100%;
     border-collapse: collapse;
+    background-color: rgb(3, 169, 244);
 }
 #message-nav  li {
     width:160px;
     display: table-cell;
     font-size: 20px;
-    transition:width 0.5s;
     text-align: center;
+}
+#message-nav  li [aria-expanded=true]{
+    color:#333 !important;
+}
+#message-nav li [aria-expanded=false]{
+    color:#fff !important;
 }
 #message-nav  li.active {
     display: table-cell;
+    color:#333 !important ;
     background-color: #eee;
     font-size: 20px;
     transition:width 0.5s;
@@ -247,9 +255,18 @@ h1,h2,h3,h4 {
     position: relative;
     padding-right: 5px;
 }
- #annoucement ,#notifcation {
-    color:#333 !important ;
+#message-nav span a{
+    padding:10px;
+    font-size:160%;
+    color: #fff;
+    float: right;
+    vertical-align: bottom;
 }
+#message-nav span a:hover{
+    color:#eee;
+    text-decoration-line: none;
+}
+
 #middle .col-md-7 ,#middle .col-md-5{
     padding:0px 25px 0px 25px;
 }
@@ -274,8 +291,9 @@ h1,h2,h3,h4 {
     padding-left: 15px;
 }
 #sidebar .panel-title , #sidebar .panel-footer {
-    font-size:150%;
+    font-size:160%;
     vertical-align: bottom;
+    line-height: 35px;
 }
 #sidebar li  {
     line-height:20px;
