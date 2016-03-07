@@ -21,7 +21,7 @@ h1,h2,h3,h4 {
 
 /* Main image */
 #main {
-    background-image:url("images/main.jpg");
+    background-image:url("../images/main.jpg");
     background-position:right;
     padding-bottom:0px;
     margin-bottom:0px;
@@ -348,7 +348,7 @@ footer hr {
     margin-bottom:5px;
 }
 #main-footer {
-    background-image:url("images/4.4.jpg");
+    background-image:url("../images/4.4.jpg");
     background-repeat:no-repeat;
     background-size:cover;
     }
