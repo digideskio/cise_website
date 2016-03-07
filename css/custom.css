@@ -114,7 +114,13 @@ h1,h2,h3,h4 {
     /* CSS3 standard */
     opacity:0.7;
     }
-
+. carousel-caption {
+    font-family:"黑体","Microsoft Yahei",sans-serif;
+    }
+.carousel-caption h3 {
+    font-color:red;
+    font-size:120%;
+    }
 .main-title {
     display:inline-block;
     vertical-align:middle !important;
