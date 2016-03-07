@@ -127,10 +127,6 @@ h1,h2,h3,h4 {
     width: auto !important;
     font-size: 60%;
     padding: 0px 5px 0px 5px;
-    border-width: 0px 5px 5px 0px !important;
-    border-style: solid;
-    border-radius: 0px;
-    border-color: rgb(3, 169, 244);
 }
 .first:first-letter {
     font-size: 200%;
@@ -140,9 +136,10 @@ h1,h2,h3,h4 {
     text-align: center;
 }
 .time span {
-    display: inline-block;
+    display: block;
     font-style: oblique;
     font-family:serif;
+    color:rgb(0,72,105);
 }
 
 .time .date {
@@ -192,7 +189,7 @@ h1,h2,h3,h4 {
     margin-right: 50px;
 }
 #messages-alter {
-    display: table; 
+    display: table;
     margin-bottom:10px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
     width: 100%;
@@ -208,20 +205,13 @@ h1,h2,h3,h4 {
     width:160px;
     display: table-cell;
     font-size: 20px;
-    border-width: 0px 5px 5px 5px;
-    border-radius: 0px;
-    border-style: solid ;
-    border-color: rgb(3, 169, 244);
     transition:width 0.5s;
-     text-align: center;
+    text-align: center;
 }
 #message-nav  li.active {
     display: table-cell;
+    background-color: #eee;
     font-size: 20px;
-    border-width: 0px;
-    border-radius: 0px;
-    border-style: solid ;
-    border-color: rgb(3, 169, 244);
     transition:width 0.5s;
 }
 #message-nav li a {
@@ -234,19 +224,79 @@ h1,h2,h3,h4 {
     background-color:#eee;
     width:100%
 }
+#myTabContent-alter ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
 #myTabContent-alter li  {
+    font-size: 80%
     line-height:20px;
-    padding-left: 20px;
     margin:5px;
+    padding-left: 0px;
+}
+#myTabContent-alter .time {
+    display: inline-block;
+    width：15%;
+}
+#myTabContent-alter .title {
+    display: inline-block;
+    width：85%;
 }
 #myTabContent-alter span {
-    display:inline-block;
+    display:block;
     position: relative;
-    float: right;
-    margin-right: 50px;
+    padding-right: 5px;
 }
  #annoucement ,#notifcation {
     color:#333 !important ;
+}
+#middle .col-md-7 ,#middle .col-md-5{
+    padding:0px 25px 0px 25px;
+}
+#middle .col-md-7 {
+    padding-left:0px;
+}
+#middle .col-md-5 {
+    padding-right:0px;
+}
+#sidebar-image {
+    padding: -15px;
+    overflow: visible;
+}
+/* sidebar */
+#sidebar a {
+    color: #fff;
+}
+#sidebar a:hover{
+    color: #eee;
+}
+#sidebar ul  {
+    padding-left: 15px;
+}
+#sidebar .panel-title , #sidebar .panel-footer {
+    font-size:150%;
+    vertical-align: bottom;
+}
+#sidebar li  {
+    line-height:20px;
+    padding-left: 10px;
+    margin:5px;
+}
+#sidebar span {
+    display:inline-block;
+    position: relative;
+    float: right;
+    vertical-align: middle;
+}
+#sidebar a {
+    color: #fff;
+    font-size:105%;
+    float: right;
+    vertical-align: bottom;
+}
+#sidebar a:hover {
+    color: #eee;
+    text-decoration:none;
 }
 /* NCR Exam */
 #ncre-main {
@@ -295,6 +345,16 @@ footer hr {
 
 #links a {
     color:#eee;
+    padding:4px;
+    }
+#links a:hover {
+    padding:2px;
+    background-color: #333;
+    color:#fff;
+    border-style: solid;
+    border-color: #333;
+    border-radius: 2px;
+    text-decoration: none;
     }
 #links ul {
     line-height: 180%;
