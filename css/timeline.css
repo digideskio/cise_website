@@ -243,6 +243,9 @@
     left: -14px;
     right: auto;
   }
+  .timeline li .tl-circ {
+    padding-left:5px;
+    }
 }
 
 /* Panel footer */

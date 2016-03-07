@@ -243,7 +243,7 @@ li .time {
 }
 #myTabContent-alter {
     padding: 10px;
-    background-color:#eee;
+    background-color:#fff;
     width:100%
 }
 #myTabContent-alter ul {
@@ -310,7 +310,7 @@ li .time {
     line-height: 35px;
 }
 #sidebar li  {
-    line-height:20px;
+    line-height:25px;
     padding-left: 10px;
     margin:5px;
 }
@@ -330,6 +330,10 @@ li .time {
     color: #eee;
     text-decoration:none;
 }
+#sidebar hr {
+    padding:4px;
+    margin:0px;
+    }
 /* NCR Exam */
 #ncre-main {
     margin-top:40px;
