@@ -118,8 +118,8 @@ h1,h2,h3,h4 {
     font-family:"黑体","Microsoft Yahei",sans-serif;
     }
 .carousel-caption h3 {
-    font-color:red;
-    font-size:120%;
+    color:red;
+    font-size:180%;
     }
 .main-title {
     display:inline-block;
