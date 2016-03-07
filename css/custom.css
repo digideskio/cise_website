@@ -21,7 +21,7 @@ h1,h2,h3,h4 {
 
 /* Main image */
 #main {
-    background-image:url("images/main.jpg");
+    background-image:url("../images/main.jpg");
     background-position:right;
     padding-bottom:0px;
     margin-bottom:0px;
@@ -114,7 +114,13 @@ h1,h2,h3,h4 {
     /* CSS3 standard */
     opacity:0.7;
     }
-
+. carousel-caption {
+    font-family:"黑体","Microsoft Yahei",sans-serif;
+    }
+.carousel-caption h3 {
+    color:red;
+    font-size:180%;
+    }
 .main-title {
     display:inline-block;
     vertical-align:middle !important;
@@ -237,7 +243,7 @@ li .time {
 }
 #myTabContent-alter {
     padding: 10px;
-    background-color:#eee;
+    background-color:#fff;
     width:100%
 }
 #myTabContent-alter ul {
@@ -304,7 +310,7 @@ li .time {
     line-height: 35px;
 }
 #sidebar li  {
-    line-height:20px;
+    line-height:25px;
     padding-left: 10px;
     margin:5px;
 }
@@ -324,6 +330,10 @@ li .time {
     color: #eee;
     text-decoration:none;
 }
+#sidebar hr {
+    padding:4px;
+    margin:0px;
+    }
 /* NCR Exam */
 #ncre-main {
     margin-top:40px;
@@ -348,7 +358,7 @@ footer hr {
     margin-bottom:5px;
 }
 #main-footer {
-    background-image:url("images/4.4.jpg");
+    background-image:url("../images/4.4.jpg");
     background-repeat:no-repeat;
     background-size:cover;
     }

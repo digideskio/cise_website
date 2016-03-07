@@ -159,14 +159,13 @@
 .timeline li .tl-circ {
   position: absolute;
   top: 36px;
-  left: 51.5%;
+  left: 49.4%;
   text-align: center;
   background: #6a8db3;
   color: #fff;
   width: 10px;
   height: 10px;
   line-height: 35px;
-  margin-left: -16px;
   border: 3px solid #90acc7;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
@@ -186,7 +185,7 @@
 }
 
 .timeline .panel-body {
-    background: url("images/quotes_bg.png") 10px 20px no-repeat ;
+    background: url("../images/quotes_bg.png") 10px 20px no-repeat ;
     background-color:#eee;
     line-height: 24px;
     padding: 50px 12px 9px 34px;
@@ -244,6 +243,9 @@
     left: -14px;
     right: auto;
   }
+  .timeline li .tl-circ {
+    padding-left:5px;
+    }
 }
 
 /* Panel footer */
