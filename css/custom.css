@@ -1,11 +1,14 @@
 /* Body */
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Microsoft Yahei","Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
     background-color:#fff;
-    }
+    }3,
+h1,h2,h3,h4 {
+    font-family: "Microsoft Yahei","Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 /* csie */
 #c {
@@ -121,11 +124,16 @@ body {
 
 .first {
     text-transform:uppercase;
-    font-size: 70%;
-    padding-right: 5px;
+    width: auto !important;
+    font-size: 60%;
+    padding: 0px 5px 0px 5px;
+    border-width: 0px 5px 5px 0px !important;
+    border-style: solid;
+    border-radius: 0px;
+    border-color: rgb(3, 169, 244);
 }
 .first:first-letter {
-    font-size: 250%;
+    font-size: 200%;
     font-weight:700;
 }
 .time {
@@ -184,21 +192,61 @@ body {
     margin-right: 50px;
 }
 #messages-alter {
-    display: table;
+    display: table; 
+    margin-bottom:10px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    width: 100%;
 }
-#messages-alter ul {
+#message-nav {
     display: table-row;
-}
-#messages-alter .nav li {
-    font-size: 18px;
-}
-#messages-alter .nav li a {
-    display: table-cell;
-    font-size: 150%;
-    font-weight:bold;
     vertical-align: middle;
-
-
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+#message-nav  li {
+    width:160px;
+    display: table-cell;
+    font-size: 20px;
+    border-width: 0px 5px 5px 5px;
+    border-radius: 0px;
+    border-style: solid ;
+    border-color: rgb(3, 169, 244);
+    transition:width 0.5s;
+     text-align: center;
+}
+#message-nav  li.active {
+    display: table-cell;
+    font-size: 20px;
+    border-width: 0px;
+    border-radius: 0px;
+    border-style: solid ;
+    border-color: rgb(3, 169, 244);
+    transition:width 0.5s;
+}
+#message-nav li a {
+    padding:10px;
+    font-size: 130%;
+    font-weight:400;
+}
+#myTabContent-alter {
+    padding: 10px;
+    background-color:#eee;
+    width:100%
+}
+#myTabContent-alter li  {
+    line-height:20px;
+    padding-left: 20px;
+    margin:5px;
+}
+#myTabContent-alter span {
+    display:inline-block;
+    position: relative;
+    float: right;
+    margin-right: 50px;
+}
+ #annoucement ,#notifcation {
+    color:#333 !important ;
 }
 /* NCR Exam */
 #ncre-main {
