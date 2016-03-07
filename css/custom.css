@@ -1,13 +1,13 @@
 /* Body */
 body {
-    font-family: "Microsoft Yahei","Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Microsoft Yahei",'Roboto',"Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
     background-color:#fff;
     }3,
 h1,h2,h3,h4 {
-    font-family: "Microsoft Yahei","Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Microsoft Yahei",'Roboto',"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* csie */
@@ -259,6 +259,7 @@ li .time {
 #myTabContent-alter .time {
     display: inline-block;
     width：15%;
+    padding-right:8px;
 }
 #myTabContent-alter .title {
     display: inline-block;
@@ -271,7 +272,7 @@ li .time {
 }
 #message-nav span a{
     padding:10px;
-    font-size:160%;
+    font-size:22.4px;
     color: #fff;
     float: right;
     vertical-align: bottom;
@@ -297,15 +298,19 @@ li .time {
 /* sidebar */
 #sidebar a {
     color: #fff;
+    font-size:22.4px;
+    float: right;
+    vertical-align: bottom;
 }
 #sidebar a:hover{
     color: #eee;
+    text-decoration:none;
 }
 #sidebar ul  {
     padding-left: 15px;
 }
 #sidebar .panel-title , #sidebar .panel-footer {
-    font-size:160%;
+    font-size:180%;
     vertical-align: bottom;
     line-height: 35px;
 }
@@ -319,16 +324,6 @@ li .time {
     position: relative;
     float: right;
     vertical-align: middle;
-}
-#sidebar a {
-    color: #fff;
-    font-size:105%;
-    float: right;
-    vertical-align: bottom;
-}
-#sidebar a:hover {
-    color: #eee;
-    text-decoration:none;
 }
 #sidebar hr {
     padding:4px;
